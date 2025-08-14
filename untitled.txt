@@ -1,0 +1,45 @@
+// logical  program
+package com.Khushi.BasicProgram;
+
+public class Logical
+{
+public static void main(String[] args)
+{
+   System.out.println(55==55 && 77==77);//true
+   System.out.println(55 >= 'A'-10 || 'a'+3<='a');//true
+System.out.println('a'+3 <= '0'-10 || 'A'>='a' && '0'==48);
+   System.out.println(5+5%5 >= 10%10/10 && 99!='b'); //true
+   System.out.println(!(44 != 'B'-26 || 'A'+'a'=='a'- -'A'));
+
+   
+}
+}
+system.out.println ("========================================");
+//increment and decrement opeater
+public class Test
+{
+public static void main(String[] args)
+{
+   int a=15;
+   --a;//a+1 -->10+1==>11
+   System.out.println(a);
+   
+   float b=20.5f;
+   ++b;
+   System.out.println(b);
+   
+   char c= 'B';
+   --c;
+   System.out.println(c);
+   
+   double d=784.21;
+   ++d;
+   System.out.println(d);
+   
+   long e=805511L;
+   --e;
+   System.out.println(e);
+   
+}
+}
+
