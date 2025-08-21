@@ -48,7 +48,7 @@ public class BitwiseOpe
 {
 public static void main(String[] args)
 {
-   int id =10;
+   
    
    System.out.println(25 & 15);//9
    System.out.println(25 | 15);//31
@@ -66,7 +66,7 @@ public static void main(String[] args)
    System.out.println(5 <<4);//80
    System.out.println(5 <<5);//60
 
-//    
+   
    System.out.println("===============================");
 
    System.out.println(5 >>1);//2
@@ -83,7 +83,7 @@ public class BitwiseOpe
 {
 public static void main(String[] args)
 {
-   int id =10;
+   
    
    System.out.println(78 & 85);
    System.out.println(69 | 52);
@@ -110,4 +110,5 @@ public static void main(String[] args)
 
 }
 }
+
 
