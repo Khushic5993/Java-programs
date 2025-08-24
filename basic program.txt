@@ -1,0 +1,193 @@
+// Basic programs
+public class addition {
+   public static void main(String[] args){
+   int a=10;
+  int b=20;
+  int sum =a- -b ;
+  System.out.println("Addition :"+sum);
+  System.out.println("Substraction:"+sub);
+  }
+  }
+  System.out.println("=========================");
+  public class swaptwono { 
+    public static void main(String []args){
+    int a=10,b=20,temp;
+    System.out.println("before swap the A :"+a+"B :"+b);
+     temp=a;
+     a=b;
+     b=temp;
+     System.out.println("after swap the A:"+a+" B :"+b);
+     
+     }
+     }
+     System.out.println("=========================");
+     
+     
+//Swap two numbers  without using  third variable
+ public class Swapvariable{
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("Before Swapping: A: " + a + " B: " + b);
+        a ^= b;
+        b ^= a;
+        a ^= b;
+        System.out.println("After Swapping:  A: " + a + " B: " + b);
+    }
+}
+  
+  System.out.print("========================")
+   // Swap two numbers in a single line without using  third variable
+   
+public class SwapSingleLine {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("Before Swapping: A: " + a + " B: " + b);
+        a = a + b - (b = a);
+        System.out.println("After Swapping:  A: " + a + " B: " + b);
+    }
+}
+  System.out.print("============================");
+  
+//Swap two numbers using multiplication/division (no third variable)
+public class SwapMulDiv {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+        System.out.println("Before Swapping: A: " + a + " B: " + b);
+        a = a * b;
+        b = a / b;
+        a = a / b;
+        System.out.println("After Swapping:  A: " + a + " B: " + b);
+    }
+    }
+    
+      System.out.print("============================");
+// if program for Check Even or Odd
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+        if (n % 2 == 0) System.out.println("Even");
+        if (n % 2 != 0) System.out.println("Odd");
+        sc.close();
+    }
+}
+System.out.println("=========================");
+// Check Positive or Negative (using if statements only)
+
+import java.util.Scanner;
+
+public class PositiveNegativeNo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        if (n >= 0)
+            System.out.println("Positive");
+        if (n < 0)
+            System.out.println("Negative");
+
+        sc.close();
+    }
+}
+System.out.println('=============================");
+//Find Largest of Two Numbers (using if statements only)
+
+import java.util.Scanner;
+
+public class LargestTwo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if (a > b)
+            System.out.println(a + " is greater");
+        if (b > a)
+            System.out.println(b + " is greater");
+        if (a == b)
+            System.out.println("Both are equal");
+
+        sc.close();
+    }
+}
+//if-else program for  person is eligible or not
+import java.util.Scanner;
+
+ public class Eligible {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        if (age >= 18)
+            System.out.println("You are eligible to vote.");
+        else
+            System.out.println("You are not eligible to vote.");
+
+        sc.close();
+    }
+}
+// dividion of two n.o 
+import java.util.Scanner;
+
+ public class Division {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter dividend: ");
+        int a = sc.nextInt();
+        System.out.print("Enter divisor: ");
+        int b = sc.nextInt();
+
+        if (b != 0)
+            System.out.println("Result: " + (a / b));
+        else
+            System.out.println("Division by zero is not allowed.");
+
+        sc.close();
+    }
+}
+// simple calculator program using switch case
+import java.util.Scanner;
+
+class SimpleCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        double a = sc.nextDouble();
+        System.out.print("Enter second number: ");
+        double b = sc.nextDouble();
+        System.out.print("Enter operator (+, -, *, /): ");
+        char op = sc.next().charAt(0);
+
+        double result;
+        switch (op) {
+            case '+':
+                result = a + b;
+                System.out.println("Result: " + result);
+                break;
+            case '-':
+                result = a - b;
+                System.out.println("Result: " + result);
+                break;
+            case '*':
+                result = a * b;
+                System.out.println("Result: " + result);
+                break;
+            case '/':
+                if (b != 0) {
+                    result = a / b;
+                    System.out.println("Result: " + result);
+                } else {
+                    System.out.println("Cannot divide by zero.");
+                }
+                break;
+            default:
+                System.out.println("Invalid operator!");
+        }
+
+        sc.close();
+    }
+}
